@@ -10,18 +10,20 @@ void printarray(vector<int> a)
     }
 }
 
-vector<int> selectionsort(vector<int> a)
+vector<int> reverce(vector<int> a)
 {
-    for (int  i = 0; i < count; i++)
+    vector<int> rvs = {};
+    for (int i = a.size()-1; i >= 0; i--)
     {
-        /* code */
+        rvs.push_back(a[i]);
     }
-    
+    return rvs;
 }
 int main()
 {
 
     vector<int> a = {5, 3, 4, 1};
-
-    return 0;
+    vector<int> result = reverce(a);
+    printarray(result);
+     return 0;
 }
